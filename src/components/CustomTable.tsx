@@ -26,7 +26,7 @@ const TableWrapper = styled.div`
     }
 
     tr {
-      border-buttom: ${pxToRem(1)} solid
+      border-bottom: ${pxToRem(1)} solid
         ${(props) => props.theme.appDefaultStroke};
 
       &:last-child {
