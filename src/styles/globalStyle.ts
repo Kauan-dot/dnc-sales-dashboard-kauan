@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme }>`
         margin-bottom: ${pxToRem(16)};
     }
 
-    .mb-1 {
+    .mb-2 {
         margin-bottom: ${pxToRem(32)};
     }
 
