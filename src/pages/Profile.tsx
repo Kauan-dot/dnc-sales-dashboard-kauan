@@ -3,7 +3,7 @@ import { AppThemeContext } from '@/contexts/AppThemeContext'
 
 // Components
 import { CardComponent, Header, StyledH2, StyledButton } from '@/components'
-import { Container, Grid } from '@mui/system'
+import { Container, Grid } from '@mui/material'
 
 // Services
 import { logout } from '@/services'
