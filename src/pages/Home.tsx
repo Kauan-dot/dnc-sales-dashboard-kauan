@@ -93,7 +93,12 @@ function Home() {
                       <StyledH2 className="mb-1" color="white">
                         Meta do mês
                       </StyledH2>
-                      <StyledH3 className="mb-1" size={40} lineheight={40}>
+                      <StyledH3
+                        className="mb-1"
+                        size={40}
+                        lineheight={40}
+                        color="white"
+                      >
                         {currencyConverter(highlightsData[1].value)}
                       </StyledH3>
                       <StyledSpan color="white">
