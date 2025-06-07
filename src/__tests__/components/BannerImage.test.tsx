@@ -1,5 +1,4 @@
-import { render } from '@testing-library/react'
-import 'jest-styled-components'
+import { render } from '@/test-utils/test-utils'
 import { BannerImage } from '@/components'
 
 describe('BannerImage', () => {
@@ -7,7 +6,7 @@ describe('BannerImage', () => {
     const { container } = render(<BannerImage />)
     expect(container.firstChild).toHaveStyleRule(
       'background-image',
-      'url(login-image.svg)'
+      'url(/login-image.svg)'
     )
     expect(container.firstChild).toHaveStyleRule('background-size', 'cover')
     expect(container.firstChild).toHaveStyleRule('height', '100vh')
