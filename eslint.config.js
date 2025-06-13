@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import prettier from 'eslint-config-prettier'
+import eslintPluginCypress from 'eslint-plugin-cypress'
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -26,4 +27,18 @@ export default tseslint.config(
       ],
     },
   },
+  {
+    files: ['**/*.cy.{ts,tsx}'],
+    plugins: {
+      cypress: eslintPluginCypress,
+    },
+    languageOptions: {
+      globals: {
+        ...eslintPluginCypress.environments.globals,
+      },
+    },
+    rules: {
+      ...eslintPluginCypress.configs.recommended.rules,
+    },
+  }
 )

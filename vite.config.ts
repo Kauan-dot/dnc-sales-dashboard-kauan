@@ -11,6 +11,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ['@mui/material', '@mui/styled-engine-sc'],
   },
+  server: {
+    host: true,
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

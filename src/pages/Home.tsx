@@ -61,6 +61,7 @@ function Home() {
             <>
               <Grid size={{ xs: 12, md: 4 }}>
                 <CardComponent
+                  id='total-sales'
                   className={
                     highlightsLoading
                       ? 'skeleton-loading skeleton-loading-mh-1'
@@ -82,6 +83,7 @@ function Home() {
               </Grid>
               <Grid size={{ xs: 12, md: 4 }}>
                 <CardComponent
+                  id='month-goal'
                   className={
                     highlightsData
                       ? highlightsData[1].subtitle
@@ -110,6 +112,7 @@ function Home() {
               </Grid>
               <Grid size={{ xs: 12, md: 4 }}>
                 <CardComponent
+                  id='total-leads'
                   className={
                     highlightsLoading
                       ? 'skeleton-loading skeleton-loading-mh-1'
@@ -147,6 +150,7 @@ function Home() {
           <Grid size={{ xs: 12, md: 7 }}>
             {!salesMonthError && (
               <CardComponent
+                id='month-sales-chart'
                 className={
                   salesMonthLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -169,6 +173,7 @@ function Home() {
           <Grid size={{ xs: 12, md: 5 }}>
             {!salesStarsError && (
               <CardComponent
+                id='sales-stars'
                 className={
                   salesStarsLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -195,6 +200,7 @@ function Home() {
           <Grid size={{ xs: 12, md: 5 }}>
             {!newsError && (
               <CardComponent
+                id='news'
                 className={
                   newsLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''
                 }
@@ -225,8 +231,9 @@ function Home() {
           <Grid size={{ xs: 12, md: 7 }}>
             {!salesYearError && (
               <CardComponent
+                id='years-sales-chart'
                 className={
-                  salesMonthLoading
+                  salesYearLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
                     : ''
                 }
